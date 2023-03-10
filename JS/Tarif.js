@@ -17,31 +17,31 @@ function RecupPoidsPrix(poids, prix){
     const P9 = 30000;
     
     if (poids <= P1){
-        return prix + 4.95;
+        return 4.95;
     }
     else if (poids <= P2){
-        return prix + 6.70;
+        return 6.70;
     }
     else if (poids <= P3){
-        return prix + 7.60;
+        return 7.60;
     }
     else if (poids <= P4){
-        return prix + 8.25;
+        return 8.25;
     }
     else if (poids <= P5){
-        return prix + 9.55;
+        return 9.55;
     }
     else if (poids <= P6){
-        return prix + 14.65;
+        return 14.65;
     }
     else if (poids <= P7){
-        return prix + 21.30;
+        return 21.30;
     }
     else if (poids <= P8){
-        return prix + 26.95;
+        return 26.95;
     }
     else if (poids <= P9){
-        return prix + 33.40;
+        return 33.40;
     }
     
 }
