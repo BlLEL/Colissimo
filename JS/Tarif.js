@@ -3,9 +3,24 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+window.addEventListener("load", function () {
+
+    window.document.querySelector("#btn_calculer").addEventListener("click", function () {
+        // Déclaration des constantes
+        
+
+        // Déclaration et affectation des variables
+        let numPoids = parseInt(window.document.querySelector("#num_poids").value);
+        let TarifFinale = RecupPoids(poids);
+        // Affichage du résultat
+        window.document.querySelector("#PrixAPayer").innerHTML =
+                "Le prix avec tarif sera de : " + TarifFinale + " €";
+    });
+});
 
 
-function RecupPoidsPrix(poids){
+
+function RecupPoids(poids){
     const P1 = 250;
     const P2 = 500;
     const P3 = 750;
