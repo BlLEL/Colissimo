@@ -14,7 +14,7 @@ window.addEventListener("load", function () {
         let TarifFinale = RecupPoids(numPoids);
         // Affichage du résultat
         window.document.querySelector("#TarifFinale").innerHTML =
-                "Le prix avec tarif sera de : " + TarifFinale + " €";
+                "Le prix avec tarif sera : " + TarifFinale + " €";
     });
 });
 
@@ -25,11 +25,17 @@ function RecupPoids(poids){
     const P2 = 500;
     const P3 = 750;
     const P4 = 1000;
+    const P04 = 1;
     const P5 = 2000;
+    const P05 = 2;
     const P6 = 5000;
+    const P06 = 5;
     const P7 = 10000;
+    const P07 = 10;
     const P8 = 15000;
+    const P08 = 15;
     const P9 = 30000;
+    const P09 = 30;
     
     if (poids <= P1){
         return 4.95;
@@ -58,5 +64,7 @@ function RecupPoids(poids){
     else if (poids <= P9){
         return 33.40;
     }
-    
+    else if (poids > P9){
+        return ('pas possible, car on ne valide pas si cela dépasse 30kg, point positif vous dépensez 0');
+    }  
 }
