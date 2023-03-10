@@ -5,7 +5,7 @@
  */
 
 
-function RecupPoidsPrix(poids, prix){
+function RecupPoidsPrix(poids){
     const P1 = 250;
     const P2 = 500;
     const P3 = 750;
