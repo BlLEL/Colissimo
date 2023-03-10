@@ -11,9 +11,9 @@ window.addEventListener("load", function () {
 
         // Déclaration et affectation des variables
         let numPoids = parseInt(window.document.querySelector("#num_poids").value);
-        let TarifFinale = RecupPoids(poids);
+        let TarifFinale = RecupPoids(numPoids);
         // Affichage du résultat
-        window.document.querySelector("#PrixAPayer").innerHTML =
+        window.document.querySelector("#TarifFinale").innerHTML =
                 "Le prix avec tarif sera de : " + TarifFinale + " €";
     });
 });
